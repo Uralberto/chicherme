@@ -32,6 +32,7 @@
 .contenedor-principal{
     width: 100%;
     padding-top: 10%;
+    margin: 2%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
