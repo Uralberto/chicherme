@@ -3,7 +3,6 @@
       const momDosPaths = document.getElementsByClassName("mom-dos-path");
       const btn = document.getElementById("momContainer_boton")
 
-      console.log(momDosPaths)
 
       function ocultarPaths() {
         for (let i = 0; i <= momDosPaths.length - 1; i++) {

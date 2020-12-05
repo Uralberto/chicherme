@@ -63,3 +63,14 @@ function togglePintarPathsCiclos() {
     boton.innerHTML = '<i class="far fa-play-circle"></i>'
   }
 }
+
+// Animación de las abras
+const contenedor = document.querySelector(".contenedor-principal")
+const abras = document.querySelector('.abras')
+
+console.log(abras)
+function removerAbras(){
+contenedor.removeChild(abras)
+}
+
+setTimeout(removerAbras, 5000)

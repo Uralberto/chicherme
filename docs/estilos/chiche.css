@@ -27,10 +27,13 @@
     box-sizing: border-box;
 }
 
+
 .contenedor-principal{
+    position: relative;
     width: 96%;
     padding-top: 8%;
     margin: 2%;
+    margin-top: 6%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -77,7 +80,6 @@ outline: none;
 }
 
 
-
 .dadContainer .g3 {
     stroke-width: .1px;
 }
@@ -89,6 +91,49 @@ outline: none;
 }
 
 
+.abras {
+    width: 100%;
+    top: 0%;
+    height: 550px;
+    display: flex;
+    position: absolute;
+
+} 
+
+
+.abra-izquierda {
+    width: 50%;
+    background-color: var(--color-darkblue2);
+    border: solid 1px var(color-gray6);
+    animation: abra-izq 4s ease-in-out 1s forwards;
+    transform-origin: left;
+}
+
+@keyframes abra-izq {
+
+  to{
+      transform: rotateY(-90deg) skewY(-5deg);
+  }
+    
+}
+
+.abra-derecha {
+    width: 50%;
+    background-color: var(--color-darkblue2);
+    border: solid 1px black;
+    animation: abra-der 4s ease-in-out 1s forwards;
+    transform-origin: right;
+}
+
+
+@keyframes abra-der {
+
+    to{
+        transform: rotateY(90deg) skewY(5deg);
+    }
+      
+  } 
+ 
 
 .cl1, .cls-125 {
     fill: #a5a4a4;
